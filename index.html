@@ -3,20 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A.A.M.E. SERVIÇOS LDA - Soluções em Energia e Engenharia</title>
-    <meta name="description" content="A.A.M.E. SERVIÇOS LDA - Especialistas em instalações elétricas, redes de energia e soluções integradas em Moçambique">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Como Fazer Upload no GitHub - A.A.M.E. SERVIÇOS</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
-        
-        :root {
-            --color-dark: #3c3c3c;
-            --color-beige: #e0d8c0;
-            --color-light-beige: #f9f7f2;
-            --color-gold: #d4af37;
-            --color-dark-gold: #8a7354;
-        }
-        
         * {
             margin: 0;
             padding: 0;
@@ -24,1030 +12,202 @@
         }
         
         body {
-            background: linear-gradient(135deg, #f5f5f0 0%, #e6e2d6 100%);
-            color: var(--color-dark);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #f5f5f0 0%, #e6e2d6 100%);
+            color: #3c3c3c;
+            padding: 20px;
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* Header */
-        header {
-            background: var(--color-dark);
-            padding: 15px 0;
-            border-bottom: 5px solid var(--color-gold);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 32px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            color: var(--color-beige);
-            text-decoration: none;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .logo-subtitle {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 14px;
-            font-weight: 300;
-            letter-spacing: 6px;
-            color: var(--color-gold);
-            margin-top: 5px;
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        
-        nav ul li {
-            margin-left: 30px;
-        }
-        
-        nav ul li a {
-            color: var(--color-beige);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-            font-size: 16px;
-        }
-        
-        nav ul li a:hover, 
-        nav ul li a.active {
-            color: var(--color-gold);
-        }
-        
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            color: var(--color-beige);
-            font-size: 24px;
-            cursor: pointer;
-        }
-        
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1621839673705-6617adf9e890?ixlib=rb-4.0.3&auto=format&fit=crop&w=1800&q=80');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-            margin-bottom: 60px;
-        }
-        
-        .hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 48px;
-            margin-bottom: 20px;
-            color: var(--color-beige);
-        }
-        
-        .hero p {
-            font-size: 20px;
-            max-width: 800px;
-            margin: 0 auto 30px;
-            color: var(--color-beige);
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            background: var(--color-gold);
-            color: var(--color-dark);
-            text-decoration: none;
-            font-weight: 600;
-            border-radius: 5px;
-            transition: all 0.3s;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        
-        .btn:hover {
-            background: #c19d2e;
-            transform: translateY(-2px);
-        }
-        
-        .btn-outline {
-            background: transparent;
-            border: 2px solid var(--color-gold);
-            color: var(--color-gold);
-        }
-        
-        .btn-outline:hover {
-            background: var(--color-gold);
-            color: var(--color-dark);
-        }
-        
-        /* Services Section */
-        .section-title {
-            text-align: center;
-            margin-bottom: 50px;
-            font-family: 'Playfair Display', serif;
-            font-size: 36px;
-            color: var(--color-dark);
-            position: relative;
-            padding-bottom: 15px;
-        }
-        
-        .section-title:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 3px;
-            background: var(--color-gold);
-        }
-        
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-bottom: 60px;
-        }
-        
-        .service-card {
             background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-        }
-        
-        .service-img {
-            height: 200px;
-            overflow: hidden;
-        }
-        
-        .service-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s;
-        }
-        
-        .service-card:hover .service-img img {
-            transform: scale(1.1);
-        }
-        
-        .service-content {
-            padding: 25px;
-        }
-        
-        .service-content h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 22px;
-            margin-bottom: 15px;
-            color: var(--color-dark);
-        }
-        
-        .service-content p {
-            margin-bottom: 20px;
-            color: #666;
-        }
-        
-        /* Projects Section */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-            margin-bottom: 60px;
-        }
-        
-        .project-card {
-            position: relative;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            height: 250px;
-        }
-        
-        .project-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .project-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(60, 60, 60, 0.85);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            transition: opacity 0.3s;
-            padding: 20px;
-            text-align: center;
-        }
-        
-        .project-card:hover .project-overlay {
-            opacity: 1;
-        }
-        
-        .project-overlay h3 {
-            color: var(--color-beige);
-            font-family: 'Playfair Display', serif;
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        
-        .project-overlay p {
-            color: var(--color-beige);
-            margin-bottom: 15px;
-        }
-        
-        /* About Section */
-        .about {
-            background: var(--color-dark);
-            color: var(--color-beige);
-            padding: 80px 0;
-            margin-bottom: 60px;
-        }
-        
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-        }
-        
-        .about-text h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 36px;
-            margin-bottom: 20px;
-            color: var(--color-beige);
-        }
-        
-        .about-text p {
-            margin-bottom: 20px;
-        }
-        
-        .about-img {
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-        
-        .about-img img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        /* Contact Section */
-        .contact {
-            margin-bottom: 60px;
-        }
-        
-        .contact-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
-        }
-        
-        .contact-card {
-            background: var(--color-light-beige);
             padding: 30px;
-            border-radius: 8px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        header {
             text-align: center;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #d4af37;
         }
         
-        .contact-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .contact-card i {
-            font-size: 36px;
-            color: var(--color-gold);
-            margin-bottom: 15px;
-        }
-        
-        .contact-card h3 {
-            font-family: 'Playfair Display', serif;
+        h1 {
+            color: #3c3c3c;
             margin-bottom: 10px;
-            color: var(--color-dark);
         }
         
-        .contact-card p {
-            color: #666;
+        .subtitle {
+            color: #8a7354;
+            font-size: 18px;
         }
         
-        .contact-form {
-            background: white;
-            padding: 40px;
+        .steps-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .step {
+            flex: 1;
+            min-width: 300px;
+            background: #f9f7f2;
+            padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid #d4af37;
         }
         
-        .form-group {
-            margin-bottom: 20px;
+        .step-number {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: #3c3c3c;
+            color: #e0d8c0;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+            font-weight: bold;
         }
         
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-            color: var(--color-dark);
+        .step h3 {
+            display: inline-block;
+            color: #3c3c3c;
         }
         
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
+        .screenshot {
             width: 100%;
-            padding: 12px 15px;
             border: 1px solid #ddd;
             border-radius: 5px;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 16px;
+            margin: 15px 0;
         }
         
-        .form-group textarea {
-            min-height: 150px;
-            resize: vertical;
+        .code {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            margin: 10px 0;
+            overflow-x: auto;
         }
         
-        /* Footer */
-        footer {
-            background: var(--color-dark);
-            color: var(--color-beige);
-            padding: 60px 0 30px;
+        .tip {
+            background: #e8f4ff;
+            border-left: 4px solid #4A90E2;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
         }
         
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
         }
         
-        .footer-logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 24px;
-            margin-bottom: 15px;
-        }
-        
-        .footer-about p {
-            margin-bottom: 20px;
-        }
-        
-        .footer-links h3,
-        .footer-services h3,
-        .footer-newsletter h3 {
-            font-family: 'Playfair Display', serif;
-            margin-bottom: 20px;
-            font-size: 20px;
-            color: var(--color-gold);
-        }
-        
-        .footer-links ul {
-            list-style: none;
-        }
-        
-        .footer-links ul li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-links ul li a {
-            color: var(--color-beige);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        .footer-links ul li a:hover {
-            color: var(--color-gold);
-        }
-        
-        .footer-services ul {
-            list-style: none;
-        }
-        
-        .footer-services ul li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-newsletter p {
-            margin-bottom: 20px;
-        }
-        
-        .newsletter-form {
-            display: flex;
-        }
-        
-        .newsletter-form input {
-            flex: 1;
-            padding: 12px 15px;
-            border: none;
-            border-radius: 5px 0 0 5px;
-            font-family: 'Montserrat', sans-serif;
-        }
-        
-        .newsletter-form button {
-            background: var(--color-gold);
-            color: var(--color-dark);
-            border: none;
-            padding: 0 20px;
-            border-radius: 0 5px 5px 0;
-            cursor: pointer;
-            font-weight: 600;
-        }
-        
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px;
-        }
-        
-        .social-links a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background: var(--color-gold);
-            color: var(--color-dark);
-            border-radius: 50%;
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-        
-        .social-links a:hover {
-            transform: translateY(-3px);
-            background: var(--color-beige);
-        }
-        
-        .copyright {
-            border-top: 1px solid var(--color-dark-gold);
-            padding-top: 30px;
-            text-align: center;
-            font-size: 14px;
-        }
-        
-        /* Responsive */
-        @media (max-width: 992px) {
-            .about-content {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-            
-            .hero h1 {
-                font-size: 40px;
-            }
+        .success {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
         }
         
         @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                text-align: center;
+            .step {
+                min-width: 100%;
             }
-            
-            nav ul {
-                margin-top: 20px;
-                justify-content: center;
-            }
-            
-            nav ul li {
-                margin: 0 15px;
-            }
-            
-            .hero {
-                padding: 80px 20px;
-            }
-            
-            .hero h1 {
-                font-size: 32px;
-            }
-            
-            .hero p {
-                font-size: 18px;
-            }
-            
-            .footer-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-            
-            .newsletter-form {
-                flex-direction: column;
-            }
-            
-            .newsletter-form input {
-                border-radius: 5px;
-                margin-bottom: 10px;
-            }
-            
-            .newsletter-form button {
-                border-radius: 5px;
-                padding: 12px;
-            }
-            
-            .social-links {
-                justify-content: center;
-            }
-            
-            .mobile-menu-btn {
-                display: block;
-                position: absolute;
-                right: 20px;
-                top: 20px;
-            }
-            
-            nav {
-                display: none;
-            }
-            
-            nav.active {
-                display: block;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background: var(--color-dark);
-                padding: 20px;
-                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-            }
-            
-            nav.active ul {
-                flex-direction: column;
-            }
-            
-            nav.active ul li {
-                margin: 10px 0;
-            }
-        }
-        
-        /* Additional Utilities */
-        .text-center {
-            text-align: center;
-        }
-        
-        .mt-20 {
-            margin-top: 20px;
-        }
-        
-        .mb-20 {
-            margin-bottom: 20px;
-        }
-        
-        .hidden {
-            display: none;
-        }
-        
-        /* Modal */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            z-index: 1000;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .modal-content {
-            background: white;
-            padding: 40px;
-            border-radius: 8px;
-            max-width: 500px;
-            width: 90%;
-            position: relative;
-        }
-        
-        .close-modal {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            font-size: 24px;
-            cursor: pointer;
-            color: #999;
-        }
-        
-        .close-modal:hover {
-            color: #333;
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container header-content">
-            <a href="#" class="logo">
-                <span>A.A.M.E.</span>
-                <span class="logo-subtitle">SERVIÇOS LDA</span>
-            </a>
+    <div class="container">
+        <header>
+            <h1>Como Fazer Upload do Arquivo HTML no GitHub</h1>
+            <p class="subtitle">Guia passo a passo para publicar o site da A.A.M.E. SERVIÇOS LDA</p>
+        </header>
+        
+        <div class="steps-container">
+            <div class="step">
+                <h3><span class="step-number">1</span> Acesse seu repositório</h3>
+                <p>Faça login na sua conta do GitHub e clique no repositório que você criou (seuusuario.github.io).</p>
+                <div class="tip">
+                    <strong>Dica:</strong> Se você ainda não criou um repositório, crie um com o nome <strong>seuusuario.github.io</strong> (substitua "seuusuario" pelo seu nome de usuário).
+                </div>
+            </div>
             
-            <button class="mobile-menu-btn" id="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </button>
+            <div class="step">
+                <h3><span class="step-number">2</span> Clique em "Add file"</h3>
+                <p>No seu repositório, clique no botão verde "Add file" e selecione "Upload files".</p>
+                <div class="warning">
+                    <strong>Importante:</strong> Certifique-se de que o arquivo principal tenha o nome <strong>index.html</strong>.
+                </div>
+            </div>
             
-            <nav id="main-nav">
-                <ul>
-                    <li><a href="#" class="active">Início</a></li>
-                    <li><a href="#services">Serviços</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Soluções em Energia e Engenharia</h1>
-            <p>Especialistas em instalações elétricas, redes de energia e soluções integradas para o seu negócio</p>
-            <div class="mt-20">
-                <a href="#contact" class="btn">Solicitar Orçamento</a>
-                <a href="#services" class="btn btn-outline">Nossos Serviços</a>
+            <div class="step">
+                <h3><span class="step-number">3</span> Arraste seu arquivo</h3>
+                <p>Arraste o arquivo HTML da A.A.M.E. SERVIÇOS para a área indicada ou clique em "choose your files".</p>
             </div>
         </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="container" id="services">
-        <h2 class="section-title">Nossos Serviços</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-img">
-                    <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Redes de Energia">
-                </div>
-                <div class="service-content">
-                    <h3>Redes de Energia</h3>
-                    <p>Instalação, manutenção e reparação de redes de baixa, média e alta tensão para diversos segmentos.</p>
-                    <a href="#contact" class="btn btn-outline">Solicitar</a>
-                </div>
+        
+        <div class="steps-container">
+            <div class="step">
+                <h3><span class="step-number">4</span> Adicione uma mensagem de commit</h3>
+                <p>Na parte inferior da página, digite uma mensagem descritiva como "Site inicial da A.A.M.E. SERVIÇOS".</p>
             </div>
             
-            <div class="service-card">
-                <div class="service-img">
-                    <img src="https://images.unsplash.com/photo-1485579149621-3123dd979885?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Instalações Elétricas">
-                </div>
-                <div class="service-content">
-                    <h3>Instalações Elétricas</h3>
-                    <p>Execução de instalações elétricas domésticas e industriais com máxima segurança e eficiência.</p>
-                    <a href="#contact" class="btn btn-outline">Solicitar</a>
-                </div>
+            <div class="step">
+                <h3><span class="step-number">5</span> Clique em "Commit changes"</h3>
+                <p>Finalize o upload clicando no botão verde "Commit changes".</p>
             </div>
             
-            <div class="service-card">
-                <div class="service-img">
-                    <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Montagem de Geradores">
-                </div>
-                <div class="service-content">
-                    <h3>Montagem de Geradores</h3>
-                    <p>Instalação profissional de geradores para garantir energia contínua para o seu negócio.</p>
-                    <a href="#contact" class="btn btn-outline">Solicitar</a>
-                </div>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-img">
-                    <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Postos de Transformação">
-                </div>
-                <div class="service-content">
-                    <h3>Postos de Transformação</h3>
-                    <p>Montagem e manutenção de postos de transformação (PT's) com tecnologia de ponta.</p>
-                    <a href="#contact" class="btn btn-outline">Solicitar</a>
-                </div>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-img">
-                    <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Equipamentos Elétricos">
-                </div>
-                <div class="service-content">
-                    <h3>Equipamentos Elétricos</h3>
-                    <p>Fornecimento de equipamentos elétricos, cabos subterrâneos e acessórios de alta qualidade.</p>
-                    <a href="#contact" class="btn btn-outline">Solicitar</a>
-                </div>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-img">
-                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Produtos de Limpeza">
-                </div>
-                <div class="service-content">
-                    <h3>Produtos de Limpeza</h3>
-                    <p>Comércio a grosso e a retalho de produtos de limpeza para empresas e consumidores finais.</p>
-                    <a href="#contact" class="btn btn-outline">Solicitar</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="container" id="projects">
-        <h2 class="section-title">Nossos Projetos</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Projeto Industrial">
-                <div class="project-overlay">
-                    <h3>Instalação Industrial</h3>
-                    <p>Instalação completa de rede elétrica para fábrica em Maputo</p>
-                    <button class="btn">Ver Detalhes</button>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1471289549423-04adaecfa1f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Projeto Residencial">
-                <div class="project-overlay">
-                    <h3>Condomínio Residencial</h3>
-                    <p>Sistema elétrico completo para condomínio de luxo</p>
-                    <button class="btn">Ver Detalhes</button>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Projeto Comercial">
-                <div class="project-overlay">
-                    <h3>Centro Comercial</h3>
-                    <p>Instalação e manutenção de rede elétrica para shopping center</p>
-                    <button class="btn">Ver Detalhes</button>
+            <div class="step">
+                <h3><span class="step-number">6</span> Acesse seu site</h3>
+                <p>Seu site estará disponível em: <strong>https://seuusuario.github.io</strong></p>
+                <div class="success">
+                    <strong>Nota:</strong> Pode levar alguns minutos para o site ficar disponível após o upload.
                 </div>
             </div>
         </div>
         
-        <div class="text-center mt-20">
-            <a href="#contact" class="btn">Ver Todos os Projetos</a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Sobre a A.A.M.E. SERVIÇOS</h2>
-                    <p>A A.A.M.E SERVIÇOS, Lda é uma sociedade por quotas de responsabilidade limitada, constituída e regida pela legislação moçambicana, que se destaca no sector de engenharia e serviços especializados em energia e soluções integradas.</p>
-                    <p>Contamos com uma equipa de profissionais qualificados, experiência consolidada e compromisso com a inovação e a qualidade, o que nos posiciona como parceiro estratégico de confiança para empresas públicas e privadas, instituições e organizações que procuram soluções sustentáveis, seguras e economicamente vantajosas.</p>
-                    <div class="mt-20">
-                        <a href="#contact" class="btn">Entre em Contato</a>
-                    </div>
-                </div>
-                <div class="about-img">
-                    <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Equipe A.A.M.E.">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="container contact" id="contact">
-        <h2 class="section-title">Entre em Contato</h2>
+        <h2>Resolução de Problemas Comuns</h2>
         
-        <div class="contact-info">
-            <div class="contact-card">
-                <i class="fas fa-map-marker-alt"></i>
-                <h3>Endereço</h3>
-                <p>Rua da Beira nº 140 r/c<br>Bairro de Hulene<br>Cidade de Maputo, Moçambique</p>
-            </div>
-            
-            <div class="contact-card">
-                <i class="fas fa-phone"></i>
-                <h3>Telefone</h3>
-                <p>+258 87 000 0000<br>+258 84 000 0000</p>
-            </div>
-            
-            <div class="contact-card">
-                <i class="fas fa-envelope"></i>
-                <h3>Email</h3>
-                <p>info@aame.co.mz<br>comercial@aame.co.mz</p>
-            </div>
-            
-            <div class="contact-card">
-                <i class="fas fa-clock"></i>
-                <h3>Horário</h3>
-                <p>Segunda - Sexta: 8h - 18h<br>Sábado: 9h - 13h</p>
-            </div>
+        <div class="step">
+            <h3>Site não atualiza?</h3>
+            <p>Às vezes, o GitHub Pages pode demorar alguns minutos para atualizar. Tente:</p>
+            <ol>
+                <li>Limpar o cache do seu navegador (Ctrl+F5)</li>
+                <li>Aguardar 5-10 minutos</li>
+                <li>Verificar se o arquivo está na branch "main" ou "master"</li>
+            </ol>
         </div>
         
-        <div class="contact-form">
-            <h3 class="text-center mb-20">Envie-nos uma mensagem</h3>
-            <form id="contactForm">
-                <div class="form-group">
-                    <label for="name">Nome Completo</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="phone">Telefone</label>
-                    <input type="tel" id="phone" name="phone">
-                </div>
-                
-                <div class="form-group">
-                    <label for="service">Serviço de Interesse</label>
-                    <select id="service" name="service">
-                        <option value="">Selecione um serviço</option>
-                        <option value="redes-energia">Redes de Energia</option>
-                        <option value="instalacoes-eletricas">Instalações Elétricas</option>
-                        <option value="geradores">Montagem de Geradores</option>
-                        <option value="postos-transformacao">Postos de Transformação</option>
-                        <option value="equipamentos">Equipamentos Elétricos</option>
-                        <option value="produtos-limpeza">Produtos de Limpeza</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="message">Mensagem</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                
-                <div class="form-group text-center">
-                    <button type="submit" class="btn">Enviar Mensagem</button>
-                </div>
-            </form>
+        <div class="step">
+            <h3>Erro 404?</h3>
+            <p>Se você recebe um erro 404:</p>
+            <ol>
+                <li>Verifique se o repositório tem exatamente o nome: seuusuario.github.io</li>
+                <li>Confirme se o arquivo principal se chama index.html</li>
+                <li>Verifique se o GitHub Pages está ativado em Settings > Pages</li>
+            </ol>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <div class="footer-logo">A.A.M.E. SERVIÇOS LDA</div>
-                    <p>Especialistas em instalações elétricas, redes de energia e soluções integradas para o seu negócio.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-links">
-                    <h3>Links Rápidos</h3>
-                    <ul>
-                        <li><a href="#">Início</a></li>
-                        <li><a href="#services">Serviços</a></li>
-                        <li><a href="#projects">Projetos</a></li>
-                        <li><a href="#about">Sobre Nós</a></li>
-                        <li><a href="#contact">Contato</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-services">
-                    <h3>Nossos Serviços</h3>
-                    <ul>
-                        <li><a href="#services">Redes de Energia</a></li>
-                        <li><a href="#services">Instalações Elétricas</a></li>
-                        <li><a href="#services">Montagem de Geradores</a></li>
-                        <li><a href="#services">Postos de Transformação</a></li>
-                        <li><a href="#services">Equipamentos Elétricos</a></li>
-                        <li><a href="#services">Produtos de Limpeza</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-newsletter">
-                    <h3>Newsletter</h3>
-                    <p>Inscreva-se para receber nossas atualizações e novidades.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Seu email" required>
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                &copy; 2023 A.A.M.E. SERVIÇOS LDA - Todos os direitos reservados
-            </div>
-        </div>
-    </footer>
-
-    <!-- Modal -->
-    <div class="modal" id="successModal">
-        <div class="modal-content">
-            <span class="close-modal" id="closeModal">&times;</span>
-            <h2 class="text-center">Mensagem Enviada!</h2>
-            <p class="text-center">Sua mensagem foi enviada com sucesso. Entraremos em contato em breve.</p>
-            <div class="text-center mt-20">
-                <button class="btn" id="modalOkBtn">OK</button>
-            </div>
+        
+        <div class="tip">
+            <h3>Dica Final</h3>
+            <p>Depois de fazer upload do arquivo HTML, você pode personalizar ainda mais seu site:</p>
+            <ul>
+                <li>Adicionar uma pasta "images" com fotos dos seus projetos</li>
+                <li>Incluir um arquivo CSS separado para estilos</li>
+                <li>Adicionar mais páginas (sobre.html, servicos.html, etc.)</li>
+            </ul>
         </div>
     </div>
-
-    <script>
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mainNav = document.getElementById('main-nav');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mainNav.classList.toggle('active');
-        });
-        
-        // Smooth Scrolling for Navigation Links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    // Close mobile menu if open
-                    mainNav.classList.remove('active');
-                    
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-        
-        // Contact Form Handling
-        const contactForm = document.getElementById('contactForm');
-        const successModal = document.getElementById('successModal');
-        const closeModal = document.getElementById('closeModal');
-        const modalOkBtn = document.getElementById('modalOkBtn');
-        
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Here you would normally send the form data to a server
-            // For this example, we'll just show the success message
-            
-            // Show success modal
-            successModal.style.display = 'flex';
-            
-            // Reset form
-            contactForm.reset();
-        });
-        
-        // Close modal handlers
-        closeModal.addEventListener('click', () => {
-            successModal.style.display = 'none';
-        });
-        
-        modalOkBtn.addEventListener('click', () => {
-            successModal.style.display = 'none';
-        });
-        
-        // Close modal when clicking outside
-        window.addEventListener('click', (e) => {
-            if (e.target === successModal) {
-                successModal.style.display = 'none';
-            }
-        });
-        
-        // Newsletter form handling
-        const newsletterForm = document.querySelector('.newsletter-form');
-        
-        newsletterForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Obrigado por se inscrever na nossa newsletter!');
-            newsletterForm.reset();
-        });
-        
-        // Project buttons
-        document.querySelectorAll('.project-card .btn').forEach(button => {
-            button.addEventListener('click', () => {
-                alert('Em um site real, isso abriria uma página com detalhes do projeto.');
-            });
-        });
-    </script>
 </body>
 </html>
